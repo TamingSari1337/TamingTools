@@ -2,8 +2,8 @@
 
 #color
 White="\033[37m"
-LightRed="\033[91m"
-LightMagenta="\033[95m"
+Red="\033[91m"
+Purple="\033[95m"
 
 
 
@@ -11,9 +11,10 @@ LightMagenta="\033[95m"
 
 menu() {
 	clear
-	echo -e -n $LightMagenta;figlet "TamingSari"
+	echo -e -n $Purple;figlet "TamingSari"
 	echo ""
-	echo -e "$White This Tools is still in progress"
+	echo -e $White ""
+	echo -e "This Tools is still in progress"
 	echo -e "1. Password Generator"
 	echo -e "2. File Encrypter/Decrypter"
 	echo -e "3. Ping Sweep"
@@ -66,12 +67,13 @@ done
 	sleep 1
 	menu
 	elif [ $sel == "4" ];then
-	echo -e $LightRed"[!] EXIT"
+	echo -e $Red"[!] EXIT"
 	sleep 1
+	echo -e $White ""
 	exit
 	else
-	echo -e $LightRed"[!] INVALID INPUT"
-	fi
+	echo -e $Red"[!] INVALID INPUT"
+	echo -e $White ""
+	fi	
 }
-
 menu
