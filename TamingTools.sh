@@ -11,7 +11,7 @@ Purple="\033[95m"
 
 menu() {
 	clear
-	echo -e -n $Purple;figlet "TamingSari"
+	echo -e -n $Purple;figlet "TapauServer"
 	echo ""
 	echo -e $White ""
 	echo -e "This Tools is still in progress"
